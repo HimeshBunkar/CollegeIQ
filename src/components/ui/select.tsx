@@ -23,4 +23,9 @@ const SelectItem = React.forwardRef<React.ElementRef<typeof SelectPrimitive.Item
     <SelectPrimitive.ItemText>{children}</SelectPrimitive.ItemText>
   </SelectPrimitive.Item>
 ));
+
+SelectTrigger.displayName = "SelectTrigger";
+SelectContent.displayName = "SelectContent";
+SelectItem.displayName = "SelectItem";
+
 export { Select, SelectValue, SelectTrigger, SelectContent, SelectItem };
