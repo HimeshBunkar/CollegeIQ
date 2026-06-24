@@ -35,7 +35,9 @@ export default function LoginPage() {
             {form.formState.errors.root && <p className="text-red-500 text-sm">{form.formState.errors.root.message}</p>}
             <Button type="submit" className="w-full">Sign In</Button>
           </form>
-          <Button variant="outline" className="w-full" onClick={() => signIn("google", { callbackUrl: "/dashboard" })}>Continue with Google</Button>
+          {process.env.NEXT_PUBLIC_GOOGLE_AUTH_ENABLED === "true" && (
+            <Button variant="outline" className="w-full" onClick={() => signIn("google", { callbackUrl: "/dashboard" })}>Continue with Google</Button>
+          )}
           <p className="text-center text-sm text-muted-foreground">No account? <Link href="/register" className="text-indigo-600 hover:underline">Sign up</Link></p>
         </CardContent>
       </Card>
