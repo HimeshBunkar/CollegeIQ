@@ -14,7 +14,7 @@ export default function HomePage() {
             <p className="text-lg text-indigo-100 mb-8 max-w-2xl">CollegeIQ helps students search 1000+ colleges, compare side-by-side, predict admission chances using rank cutoffs, and build shortlists — all in one SaaS platform.</p>
             <div className="flex flex-wrap gap-4">
               <Button size="lg" className="bg-white text-indigo-700 hover:bg-indigo-50" asChild><Link href="/colleges">Search Colleges <ArrowRight className="ml-2 h-4 w-4" /></Link></Button>
-              <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10" asChild><Link href="/predict">Try Rank Predictor</Link></Button>
+              <Button size="lg" variant="outline" className="border-white/30 bg-transparent text-white hover:bg-white/10 hover:text-white" asChild><Link href="/predict">Try Rank Predictor</Link></Button>
             </div>
           </div>
         </div>
